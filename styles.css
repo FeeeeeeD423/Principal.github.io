@@ -1,0 +1,52 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Estilo del Encabezado */
+.header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #C1272D; /* Un rojo que parece coincidir con el de la imagen */
+}
+
+.header h1 {
+    font-size: 48px;
+    border: 3px solid #C1272D;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+/* Estilo de los Botones */
+.button {
+    background-color: #C1272D; /* El mismo rojo del encabezado */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #A2202C; /* Un rojo ligeramente más oscuro para el efecto hover */
+}
+
+/* Contenedor para centrar los botones */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Añade margen automático a los lados para centrar el bloque */
+.buttons-container .button {
+    margin: 20px;
+}
