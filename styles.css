@@ -1,6 +1,29 @@
-/* Estilos comunes para todos los botones */
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #C1272D;
+}
+
+.header h1 {
+    font-size: 48px;
+    border: 3px solid #C1272D;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+/* Estilos de Botones */
 .button, .sub-button {
-    background-color: #C1272D; /* Un rojo que parece coincidir con el de la imagen */
+    background-color: #C1272D;
     color: white;
     border: none;
     border-radius: 15px;
@@ -12,18 +35,28 @@
 }
 
 .button:hover, .sub-button:hover {
-    background-color: #A2202C; /* Un rojo ligeramente más oscuro para el efecto hover */
+    background-color: #A2202C;
 }
 
-/* Contenedor para los sub-botones */
-.sub-buttons-container {
-    display: none; /* oculto por defecto */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sub-menu {
     flex-direction: column;
     align-items: center;
 }
 
-.sub-button {
-    padding: 10px 20px; /* un poco más pequeño que los botones principales */
-    font-size: 16px;
-    margin-top: 5px; /* espacio entre sub-botones */
+/* Estilos del botón 'Volver' */
+.button-back {
+    background-color: #fff;
+    color: #C1272D;
+    padding: 10px 20px;
+}
+
+.button-back:hover {
+    background-color: #C1272D;
+    color: white;
 }
