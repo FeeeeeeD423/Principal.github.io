@@ -3,37 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>Central de Aplicativos</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header">
         <h1>HOP-UC</h1>
         <div>Feeeeed</div>
     </div>
-    <div class="buttons-container">
-        <button class="button" onclick="toggleSubMenu('comunicacion-digital')">Comunicación Digital</button>
-        <div id="comunicacion-digital" class="sub-buttons-container">
-            <button class="sub-button">STRD</button>
-            <button class="sub-button">SCR-RRSS</button>
-            <button class="sub-button">Reportes Autoridades</button>
-        </div>
 
-        <button class="button">Gestión de Prensa</button>
-
-        <button class="button" onclick="toggleSubMenu('presupuesto-finanzas')">Presupuesto y Finanzas</button>
-        <div id="presupuesto-finanzas" class="sub-buttons-container">
-            <button class="sub-button">Sistema de Evaluación de Licitaciones (SEL)</button>
-            <button class="sub-button">Seguimiento de Servicios Externos (SSE)</button>
-        </div>
-
-        <button class="button" onclick="toggleSubMenu('asistente-comunicaciones')">Asistente Comunicaciones</button>
-        <div id="asistente-comunicaciones" class="sub-buttons-container">
-            <button class="sub-button">Directorio Intranet</button>
-            <button class="sub-button">Cumpleaños</button>
-            <button class="sub-button">Inventario Comunicaciones</button>
-        </div>
+    <div class="buttons-container" id="main-buttons">
+        <button class="button" onclick="showSubMenu('comunicacion-digital')">Comunicación Digital</button>
+        <button class="button" onclick="showSubMenu('gestion-prensa')">Gestión de Prensa</button>
+        <button class="button" onclick="showSubMenu('presupuesto-finanzas')">Presupuesto y Finanzas</button>
+        <button class="button" onclick="showSubMenu('asistente-comunicaciones')">Asistente Comunicaciones</button>
     </div>
+
+    <div class="buttons-container sub-menu" id="comunicacion-digital" style="display: none;">
+        <button class="button button-back" onclick="showMainMenu()">← Volver</button>
+        <button class="sub-button">STRD</button>
+        <button class="sub-button">SCR-RRSS</button>
+        <button class="sub-button">Reportes Autoridades</button>
+    </div>
+
+    <!-- Repite la estructura de arriba para los otros sub-menús -->
+
+    <script src="script.js"></script>
 </body>
 </html>
