@@ -1,0 +1,21 @@
+/* Estilo de los Sub-botones */
+.sub-buttons-container {
+    display: none;
+    margin-top: 10px;
+}
+
+.sub-button {
+    background-color: #A2202C; /* Un rojo más oscuro para los sub-botones */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sub-button:hover {
+    background-color: #900;
+}
