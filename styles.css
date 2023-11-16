@@ -1,21 +1,29 @@
-/* Estilo de los Sub-botones */
-.sub-buttons-container {
-    display: none;
-    margin-top: 10px;
-}
-
-.sub-button {
-    background-color: #A2202C; /* Un rojo más oscuro para los sub-botones */
+/* Estilos comunes para todos los botones */
+.button, .sub-button {
+    background-color: #C1272D; /* Un rojo que parece coincidir con el de la imagen */
     color: white;
     border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 5px;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.sub-button:hover {
-    background-color: #900;
+.button:hover, .sub-button:hover {
+    background-color: #A2202C; /* Un rojo ligeramente más oscuro para el efecto hover */
+}
+
+/* Contenedor para los sub-botones */
+.sub-buttons-container {
+    display: none; /* oculto por defecto */
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-button {
+    padding: 10px 20px; /* un poco más pequeño que los botones principales */
+    font-size: 16px;
+    margin-top: 5px; /* espacio entre sub-botones */
 }
