@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Aplicativos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener un archivo CSS -->
+    <script src="script.js" defer></script> <!-- Asegúrate de tener un archivo JS -->
+</head>
+<body>
+    <div id="app">
+        <h1>Bienvenido a la Central de Aplicativos</h1>
+        <div id="main-menu">
+            <button onclick="showCategory('digital')">Digital</button>
+            <button onclick="showCategory('prensa')">Prensa</button>
+            <button onclick="showCategory('presupuesto')">Presupuesto</button>
+            <button onclick="showCategory('asistente')">Asistente</button>
+        </div>
+        <div id="category-content">
+            <!-- Aquí se cargarán los aplicativos según la selección -->
+        </div>
+    </div>
+</body>
+</html>
