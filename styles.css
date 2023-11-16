@@ -1,8 +1,9 @@
 /* Estilos Generales */
-body {
-    font-family: 'Arial', sans-serif;
+body, html {
+    height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     text-align: center;
 }
@@ -19,6 +20,27 @@ body {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 25px;
+}
+
+/* Estilo para el botón 'Volver' */
+.button-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+    color: #C1272D;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #C1272D;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-back:hover {
+    background-color: #C1272D;
+    color: white;
 }
 
 /* Estilos de Botones */
@@ -39,24 +61,18 @@ body {
 }
 
 .buttons-container {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .sub-menu {
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Estilos del botón 'Volver' */
-.button-back {
-    background-color: #fff;
-    color: #C1272D;
-    padding: 10px 20px;
-}
-
-.button-back:hover {
-    background-color: #C1272D;
-    color: white;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
